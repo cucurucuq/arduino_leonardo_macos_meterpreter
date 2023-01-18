@@ -6,7 +6,7 @@ This sketch was created only for educational purposes. This script shows the dan
 MacOS desktop:
 ![](https://github.com/cucurucuq/arduino_leonardo_macos_meterpreter/blob/main/badusb_macos.gif)
 Kali:
-![]()
+![](https://github.com/cucurucuq/arduino_leonardo_macos_meterpreter/blob/main/capture_session.gif)
 # Usage 
 We need to use Metasploit Framework and simple http server, you can use Kali Linux
 
