@@ -1,4 +1,3 @@
-#define kbd_es_es
 #include <phukdlib_leonardo.h>
 
 
